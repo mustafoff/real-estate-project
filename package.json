@@ -12,7 +12,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "real-estate-project": "file:"
   },
   "devDependencies": {
     "sass": "^1.87.0"
