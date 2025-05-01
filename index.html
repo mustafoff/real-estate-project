@@ -10,34 +10,98 @@
     <header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Properties</li>
-          <li>Agents</li>
-          <li>About Us</li>
-          <li>Contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Properties</a></li>
+          <li><a href="#">Agents</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="hero-banner">
-        <h1>Home Is Where It All Begins.</h1>
-        <div class="banner-container">
-          <div class="overlay"></div>
-          <div class="banner-item fade">
-              <img src="images/hero-banner/image1.jpg" alt="banner-image3" />
+        <div class="overlay"></div>
+        <div class="banner-content container">
+          <h1>Home Is Where It All Begins.</h1>
+          <p>
+            Home is where routines are built, ideas take shape, and life
+            gradually unfolds. It’s the starting point for growth, decisions,
+            and the everyday moments that quietly define who we become.
+          </p>
+          <div class="banner-images">
+            <div class="banner-item fade">
+              <img
+                src="images/hero-banner/image1.jpg"
+                alt="banner-image1"
+                loading="eager"
+              />
+            </div>
+            <div class="banner-item fade">
+              <img
+                src="images/hero-banner/image2.jpg"
+                alt="banner-image2"
+                loading="lazy"
+              />
+            </div>
+            <div class="banner-item fade">
+              <img
+                src="images/hero-banner/image3.jpg"
+                alt="banner-image3"
+                loading="lazy"
+              />
+            </div>
+            <div class="banner-item fade">
+              <img
+                src="images/hero-banner/image4.jpg"
+                alt="banner-image4"
+                loading="lazy"
+              />
+            </div>
+            <div class="banner-item fade">
+              <img
+                src="images/hero-banner/image5.jpg"
+                alt="banner-image5"
+                loading="lazy"
+              />
+            </div>
           </div>
-          <div class="banner-item fade">
-              <img src="images/hero-banner/image2.jpg" alt="banner-image3" />
-          </div>
-          <div class="banner-item fade">
-              <img src="images/hero-banner/image3.jpg" alt="banner-image3" />
-          </div>
-          <div class="banner-item fade">
-              <img src="images/hero-banner/image4.jpg" alt="banner-image3" />
-          </div>
-          <div class="banner-item fade">
-            <img src="images/hero-banner/image5.jpg" alt="banner-image3" />
+          <div class="banner-form">
+            <form action="#" method="GET">
+              <label for="location">Location</label>
+              <input type="text" name="location" id="location" />
+              <select name="property-type" id="property-type">
+                <option value="house">House</option>
+                <option value="apartment">Apartment</option>
+                <option value="office">Office</option>
+                <option value="villa">Villa</option>
+              </select>
+              <input
+                type="radio"
+                name="listing-type"
+                id="sale"
+                value="sale"
+                checked
+              />
+              <label for="sale">Sale</label>
+              <input type="radio" name="listing-type" id="rent" value="rent" />
+              <label for="rent">Rent</label>
+              <label for="price-range">Select price:</label>
+              <input
+                type="range"
+                id="price-range"
+                name="price-range"
+                min="0"
+                max="100000000"
+              />
+              <select name="bedrooms" id="bedrooms">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <input type="submit" value="submit" />
+            </form>
           </div>
         </div>
       </section>
